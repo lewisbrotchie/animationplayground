@@ -76,6 +76,7 @@ const styles = {
     fontFamily: "Helvetica"
   },
   menu: {
+    fontFamily: "Helvetica",
     overflow: "hidden",
     border: "2px solid #ddd",
     width: 300,
@@ -87,6 +88,7 @@ const styles = {
     borderBottom: "1px solid #ededed"
   },
   animateButton: {
+    fontFamily: "Helvetica",
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
@@ -111,7 +113,8 @@ const styles = {
     height: 50,
     border: "none",
     borderRadius: 4,
-    fontSize: 20,
+    fontSize: 16,
+    fontFamily: "Helvetica",
     cursor: "pointer",
     transition: ".25s all"
   },
