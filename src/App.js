@@ -30,13 +30,13 @@ class App extends Component {
     const label = this.state.disabled ? "Disabled" : "Submit";
     return (
       <div>
-        <h2>CSS Animations</h2>
+        <h2 style={styles.header}>CSS Animation</h2>
         <input
           ref={input => (this.input = input)}
           className={["input", this.state.focused && "input-focused"].join(" ")}
         />
         <hr />
-        <h2>JS Animations</h2>
+        <h2 style={styles.header}>JS Animation</h2>
         <button
           style={Object.assign(
             {},
@@ -50,6 +50,7 @@ class App extends Component {
         <br />
         <input style={styles.input} onChange={this.onChange} />
         <hr />
+        <h2 style={styles.header}>React Motion</h2>
         <div style={styles.animateButton} onClick={this.animate}>
           Animate
         </div>
@@ -71,6 +72,9 @@ class App extends Component {
 }
 
 const styles = {
+  header: {
+    fontFamily: "Helvetica"
+  },
   menu: {
     overflow: "hidden",
     border: "2px solid #ddd",
